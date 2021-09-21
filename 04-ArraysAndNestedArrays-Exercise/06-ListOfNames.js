@@ -5,6 +5,15 @@ function listNames(arr) {
     for (let i = 0; i < sorted.length; i++) {
         console.log(`${i + 1}.${sorted[i]}`);
     }
+
+    // or:
+    /*
+    let orderNumber = 1;
+    arr.forEach((el)=> {
+        console.log(`${orderNumber}.${el}`);
+        orderNumber++;
+    })
+    */
 }
 
 
