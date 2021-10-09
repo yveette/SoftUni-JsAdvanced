@@ -1,32 +1,17 @@
 function solution() {
-    let state = '';
+    let str = '';
 
     return {
-        append,
-        removeStart,
-        removeEnd,
-        print
+        append: v => (str += v),
+        removeStart: x => (str = str.slice(x)),
+        removeEnd: x => (str = str.slice(0, -x)),
+        print: () => console.log(str),
     }
 
     // append(string) - append the given string at the end of the internal string
     // removeStart(n) - remove the first n characters from the string, n is an integer
     // removeEnd(n) - remove the last n characters from the string, n is an integer
     // print - print the stored string on the console
-    function append(str) {
-        state += str;
-    }
-
-    function removeStart(n) {
-        state = state.slice(n);
-    }
-
-    function removeEnd(n) {
-        state = state.slice(0, -n);
-    }
-
-    function print(str) {
-        console.log(state);
-    }
 }
 
 
