@@ -8,7 +8,7 @@ function solve() {
    output.value = '';
 
    function onClick(ev) {
-      if (ev.target.tagName == 'BUTTON' && ev.target.classList.contains("add-product")) {
+      if (ev.target.tagName == 'BUTTON' && ev.target.classList.contains("add-product") && checked != true) {
          //or ---> ev.target.classList.contains("add-product")
          // ev.target.className == "add-product"
          const product = ev.target.parentNode.parentNode;
@@ -25,6 +25,7 @@ function solve() {
 
    let checked = false;
    function checkout(ev) {
+      checked = true;
       // save unique keys
       const products = new Set();
       cart.forEach(p => products.add(p.name));
