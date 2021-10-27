@@ -1,0 +1,15 @@
+{
+  "name": "03.Cinema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "03.Cinema.js",
+  "scripts": {
+    "test": "mocha 03.Cinema.test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4"
+  }
+}
